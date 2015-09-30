@@ -1,0 +1,34 @@
+# This file contains additional build requirements that did not get
+# picked up automatically. One name per line, no whitespace.
+requests-python
+PyYAML-python
+python-keystoneclient-python
+cliff-python
+stevedore
+prettytable
+oslo.utils-python
+oslo.serialization-python
+oslo.config
+iso8601-python
+pyparsing-python
+cmd2-python
+netifaces-python
+msgpack-python-python
+wrapt-python
+testtools-python
+testtools
+tempest-lib-python
+nose-python
+unittest2-python
+Sphinx-python
+pylint-python
+simplejson
+pycrypto-python
+python-openstackclient-python
+oslosphinx-python
+ordereddict-python
+python-mock-python
+discover-python
+ddt-python
+coverage-python
+hacking
