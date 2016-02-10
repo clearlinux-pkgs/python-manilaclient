@@ -1,10 +1,28 @@
 CHANGES
 =======
 
+1.7.0
+-----
+
+* Remove argparse from requirements
+* Fix backwards compatibility for v1 API imports
+* Keep using the session we had when creating keystone client
+* Add uppercase env var names for consistency
+* Fix the "OpenStack CLI guide" link
+* Updated from global requirements
+* Add debug testenv in tox
+* Removes MANIFEST.in as it is not needed explicitly by PBR
+* Updated from global requirements
+* Replace deprecated LOG.warn with warning
+* Remove vim header from source files
+* Show selected columns in list commands of manila
+
 1.6.0
 -----
 
+* Remove unreachable code from unit tests
 * Client fix for api_version in positional and kwarg
+* Replace assertEqual(None, *) with assertIsNone in tests
 * Updated from global requirements
 * Fix microversion comparison approach in functional tests
 * Drop py33 support
