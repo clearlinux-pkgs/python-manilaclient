@@ -1,9 +1,34 @@
 CHANGES
 =======
 
+1.8.0
+-----
+
+* Add 'cephx' authentication type
+* Added new CLI commands for Share migration
+* Use 'example' instead of 'foo' or 'bar' in help outputs
+* Annotate CLI commands for experimental features
+* CLI for manage/unmanage snapshot
+* Support preferred export locations in Manila CLI
+* Client Support for Manila Share Replication
+* Fix post_test_hook.sh script auth error
+* Updated from global requirements
+* To tag all the Admin-only APIs as Admin only
+* Fix function name
+* Add missing element in functional test
+* Eliminate unnecessary character
+* Fix functional tests to respect insecure SSL option
+* Updated from global requirements
+* Fix Access Rules functional tests
+* Add support of export location metadata feature
+* Set default access_level to rw in help
+* Updated from global requirements
+
 1.7.0
 -----
 
+* Fix Mutable default argument
+* Updated typos
 * Remove argparse from requirements
 * Fix backwards compatibility for v1 API imports
 * Keep using the session we had when creating keystone client
@@ -14,6 +39,7 @@ CHANGES
 * Removes MANIFEST.in as it is not needed explicitly by PBR
 * Updated from global requirements
 * Replace deprecated LOG.warn with warning
+* Replace assertTrue(isinstance()) with assertIsInstance()
 * Remove vim header from source files
 * Show selected columns in list commands of manila
 
