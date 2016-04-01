@@ -4,7 +4,7 @@
 #
 Name     : python-manilaclient
 Version  : 1.8.0
-Release  : 6
+Release  : 7
 URL      : http://tarballs.openstack.org/python-manilaclient/python-manilaclient-1.8.0.tar.gz
 Source0  : http://tarballs.openstack.org/python-manilaclient/python-manilaclient-1.8.0.tar.gz
 Summary  : Client library for OpenStack Manila API.
