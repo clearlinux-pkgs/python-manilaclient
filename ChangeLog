@@ -1,6 +1,14 @@
 CHANGES
 =======
 
+1.8.1
+-----
+
+* Revert fix access rules functional tests
+* Fix typos
+* Microversion 'cephx' access type in API v2
+* Fixed description of auth_url config parameter
+
 1.8.0
 -----
 
