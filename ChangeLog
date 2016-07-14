@@ -1,6 +1,27 @@
 CHANGES
 =======
 
+1.9.0
+-----
+
+* Updated from global requirements
+* Add support for releasenotes
+* Remove iso8601 and pycrypto useless requirements
+* Updated from global requirements
+* Fix view of doc info for functional tests
+* Update the home-page with developer documentation
+* Added CONTRIBUTING.rst file to the project
+* Add possibility to provide auth token via CLI
+* Fix "single_alias" action for CLI commands
+* Updated from global requirements
+* Hacking version update and pep8 issues fix
+* Fix list access function comment
+* Updated from global requirements
+* Replace tempest-lib with tempest.lib
+* Updated from global requirements
+* UnsupportedVersion Thrown for Supported Version
+* Fix typos
+
 1.8.1
 -----
 
@@ -216,7 +237,7 @@ CHANGES
 * Improve documentation
 * Updated from global requirements
 * Remove unneeded init file
-* Add filtering to share-network-list command
+* Add filtering to  share-network-list command
 * Improve snapshots list API filtering
 * Sync with oslo-incubator
 * Use oslo.utils
