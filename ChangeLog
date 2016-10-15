@@ -1,6 +1,36 @@
 CHANGES
 =======
 
+1.11.0
+------
+
+* Add share type change to Share Migration CLI
+* Update Share Migration CLI
+* add access_key to access_list API's response
+* Remove ordereddict from test-requirements.txt
+* Updated from global requirements
+* Add snapshot instances admin CLIs
+* Add columns support for share-replica-list
+* Add validation for token and bypass_url
+* Updated from global requirements
+* Replace OpenStack LLC with OpenStack Foundation
+* Use consistent env variable naming
+
+1.10.0
+------
+
+* Updated from global requirements
+* Define experimental API header on python client level instead of CLI
+* Remove white space between print and ()
+* Updated from global requirements
+* Updated from global requirements
+* manila list --all-tenants should display projectID
+* [CI] Fix devstack hooks to unblock CI
+* Make dict.keys() PY3 compatible
+* Handle error for missing minor api version
+* Remove discover from test-requirements
+* Updated from global requirements
+
 1.9.0
 -----
 
