@@ -4,7 +4,7 @@
 #
 Name     : python-manilaclient
 Version  : 1.11.0
-Release  : 14
+Release  : 15
 URL      : http://tarballs.openstack.org/python-manilaclient/python-manilaclient-1.11.0.tar.gz
 Source0  : http://tarballs.openstack.org/python-manilaclient/python-manilaclient-1.11.0.tar.gz
 Summary  : Client library for OpenStack Manila API.
