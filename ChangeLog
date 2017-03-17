@@ -1,6 +1,57 @@
 CHANGES
 =======
 
+1.14.0
+------
+
+* Update help message for share-instance-reset-state command
+
+1.13.0
+------
+
+* Add mountable snapshots support to manila client
+* Add share group support to Manila client
+
+1.12.0
+------
+
+* Implement Share Migration Ocata improvements
+* Support changes to access rules APIs
+* Support share revert to snapshot in Manila client
+* Add the ability to check tenant quota detail
+* Remove Nova Net option for share networks
+* Enable coverage report in console output
+* Removes unnecessary utf-8 encoding
+* Add create_share_from_snapshot_support extra spec
+* Fix "replication_type" extra-spec values in tests
+* Add share_type filter to pool_list
+* Add Constraints support
+* Use assertGreater(len(x), 0) instead of assertTrue(len(x) > 0)
+* Updated from global requirements
+* Configures coverage tool
+* Show team and repo badges on README
+* Updated from global requirements
+* Fix misleading help text
+* Updated from global requirements
+* Updated from global requirements
+* Add Python 3.5 classifier and venv
+* Switch test runner to ostestr wrapper
+* Use dummy driver in functional tests CI job
+* Add support of Identity API V3 in functional tests
+* Updated from global requirements
+* Enable release notes translation
+* Run pre_test_hook.sh of manila in client's CI
+* Fix share-server-delete command
+* Remove copy of incubated Oslo code
+* Config: no need to set default=None
+* Modify use of assertTrue(A in B)
+* Add reno for availability-zone-list
+* Add __ne__ built-in function
+* Add support of Availability Zones API
+* Allow deletion of multiple resources for some manila commands
+* Update reno for stable/newton
+* type-create should support specifying extra-specs
+
 1.11.0
 ------
 
