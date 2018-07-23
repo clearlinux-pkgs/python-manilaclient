@@ -1,13 +1,147 @@
 CHANGES
 =======
 
+1.23.0
+------
+
+* allow '--help' to print subcomands info
+* Switch to use stestr instead of testr
+* Support filter search for share type API
+* Fix failed to import test module
+* Mark functional tests passwords as secrets
+* Remove fake\_client module as it is unused
+* Trivial: Update pypi url to new url
+
+1.22.0
+------
+
+* Allow clone of manila-tempest-plugin
+* add lower-constraints job
+* Follow the new PTI for document build
+* Drop unused test-requirement
+* Updated from global requirements
+* add os-testr to test-requirements
+* Add unit-test for apiversions.APIVersion.is\_latest
+* Update links in README
+* Fix manila endpoint in catalog not find error
+* Fix 'List' command filters do not accept unicode symbols
+* Update reno for stable/queens
+* Clean imports in code
+* Updated from global requirements
+* Zuul: Remove project name
+* Cover string representations of api\_versions.APIVersion
+
+1.21.0
+------
+
+* Added 'description' in share type
+* Add missing assertions for APIVersion comparison
+* Add 'count' in list command
+* Add show share type detail command
+* Add functional tests for MAPRFS protocal
+
+1.20.0
+------
+
+* Add search\_opts in func list of ManagerWithFind type classes
+* Fix share can not be found by name in admin context
+* Updated from global requirements
+* Avoid tox\_install.sh for constraints support
+
+1.19.0
+------
+
+* Updated from global requirements
+* Compare API call body in assertions with respect to values
+* Fix 'List' command filters do not accept unicode symbols
+* Remove setting of version/release from releasenotes
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+
+1.18.0
+------
+
+* Fix missing domain arguments in functional tests
+* Migrating legacy jobs
+* Increase code coverage
+* Increase code coverage
+* Use generic user for both zuul v2 and v3
+* Add MAPRFS protocol in create help
+* [TrivialFix] Add three kinds of ignorable file to .gitignore
+* Use more parts from keystoneauth
+* Fix for use endpoint\_type in \_discover\_client method
+* Updated from global requirements
+* Properly deprecate v1.client and some other client related things
+* Updated from global requirements
+* Allows the use of dollar sign in usernames to allow for windows computer authentication in an active directory environment
+* tests: use .stestr.conf except for functional tests
+* Correct import of keystoneauth1 session
+* TrivialFix flake8 and docs build in tox.ini
+* doc-migration: new directory layout
+* Updated from global requirements
+* TrivialFix for HACKING file
+* Add license to doc/source/conf.py
+* doc migration: openstackdocstheme completion
+* Updated from global requirements
+* Group specs can not be set in share group type create CLI
+* Stop skipping ipv6 delete access rule test
+* Add rally job manifests
+* Fix list command when not given search\_opts
+* Update reno for stable/pike
+* Updated from global requirements
+
+1.17.1
+------
+
+* Fix manilclient.v2 import error
+
+1.17.0
+------
+
+* Enable IPv6 in manila(client)
+* Add like filter
+* Updated from global requirements
+* Add export-location filter in share and share instance list
+* Add share group quotas
+* Add quotas per share type
+* Add commands for user messages
+* Update the documentation link for doc migration
+* Enable some off-by-default checks
+* Replace http with https
+* Updated from global requirements
+* Increases code coverage
+* Correcting author
+* Switch from oslosphinx to openstackdocstheme
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+
+1.16.0
+------
+
+* Updated from global requirements
+* Change to share access list API
+* Updated from global requirements
+* Replace assertRaisesRegexp with assertRaisesRegex
+* Updated from global requirements
+* Incorrect case, parenthesis & periods in CLI Guide
+* Updated from global requirements
+* Optimize the link address
+* Use Identity v3 API always for functional tests
+* doc: Remove cruft from conf.py
+* Use Sphinx 1.5 warning-is-error
+* Explicitly set 'builders' option
+* Remove unused sort key export\_location from list CLI
+* Updated from global requirements
+
 1.15.0
 ------
 
 * Updated from global requirements
 * Updated from global requirements
 * Add release note for fixing bug 1664877
-* Replaces uuid.uuid4 with uuidutils.generate_uuid()
+* Replaces uuid.uuid4 with uuidutils.generate\_uuid()
 * change user access name limit from 32 to 255 characters
 * Updated from global requirements
 * Remove log translations
@@ -46,9 +180,9 @@ CHANGES
 * Remove Nova Net option for share networks
 * Enable coverage report in console output
 * Removes unnecessary utf-8 encoding
-* Add create_share_from_snapshot_support extra spec
-* Fix "replication_type" extra-spec values in tests
-* Add share_type filter to pool_list
+* Add create\_share\_from\_snapshot\_support extra spec
+* Fix "replication\_type" extra-spec values in tests
+* Add share\_type filter to pool\_list
 * Add Constraints support
 * Use assertGreater(len(x), 0) instead of assertTrue(len(x) > 0)
 * Updated from global requirements
@@ -64,13 +198,13 @@ CHANGES
 * Add support of Identity API V3 in functional tests
 * Updated from global requirements
 * Enable release notes translation
-* Run pre_test_hook.sh of manila in client's CI
+* Run pre\_test\_hook.sh of manila in client's CI
 * Fix share-server-delete command
 * Remove copy of incubated Oslo code
 * Config: no need to set default=None
 * Modify use of assertTrue(A in B)
 * Add reno for availability-zone-list
-* Add __ne__ built-in function
+* Add \_\_ne\_\_ built-in function
 * Add support of Availability Zones API
 * Allow deletion of multiple resources for some manila commands
 * Update reno for stable/newton
@@ -81,12 +215,12 @@ CHANGES
 
 * Add share type change to Share Migration CLI
 * Update Share Migration CLI
-* add access_key to access_list API's response
+* add access\_key to access\_list API's response
 * Remove ordereddict from test-requirements.txt
 * Updated from global requirements
 * Add snapshot instances admin CLIs
 * Add columns support for share-replica-list
-* Add validation for token and bypass_url
+* Add validation for token and bypass\_url
 * Updated from global requirements
 * Replace OpenStack LLC with OpenStack Foundation
 * Use consistent env variable naming
@@ -117,7 +251,7 @@ CHANGES
 * Update the home-page with developer documentation
 * Added CONTRIBUTING.rst file to the project
 * Add possibility to provide auth token via CLI
-* Fix "single_alias" action for CLI commands
+* Fix "single\_alias" action for CLI commands
 * Updated from global requirements
 * Hacking version update and pep8 issues fix
 * Fix list access function comment
@@ -133,7 +267,7 @@ CHANGES
 * Revert fix access rules functional tests
 * Fix typos
 * Microversion 'cephx' access type in API v2
-* Fixed description of auth_url config parameter
+* Fixed description of auth\_url config parameter
 
 1.8.0
 -----
@@ -145,7 +279,7 @@ CHANGES
 * CLI for manage/unmanage snapshot
 * Support preferred export locations in Manila CLI
 * Client Support for Manila Share Replication
-* Fix post_test_hook.sh script auth error
+* Fix post\_test\_hook.sh script auth error
 * Updated from global requirements
 * To tag all the Admin-only APIs as Admin only
 * Fix function name
@@ -155,7 +289,7 @@ CHANGES
 * Updated from global requirements
 * Fix Access Rules functional tests
 * Add support of export location metadata feature
-* Set default access_level to rw in help
+* Set default access\_level to rw in help
 * Updated from global requirements
 
 1.7.0
@@ -181,14 +315,14 @@ CHANGES
 -----
 
 * Remove unreachable code from unit tests
-* Client fix for api_version in positional and kwarg
-* Replace assertEqual(None, *) with assertIsNone in tests
+* Client fix for api\_version in positional and kwarg
+* Replace assertEqual(None, \*) with assertIsNone in tests
 * Updated from global requirements
 * Fix microversion comparison approach in functional tests
 * Drop py33 support
 * Deprecated tox -downloadcache option removed
 * Fix share size units to match the API
-* API 'manage' can set share attr 'is_public'
+* API 'manage' can set share attr 'is\_public'
 * Updated from global requirements
 * Add python classifiers to setup.cfg
 * Allows type-create to return dict instead of list
@@ -211,7 +345,7 @@ CHANGES
 -----
 
 * Add Keystone v3 API support
-* Incorrect help of export_path for the manage utility
+* Incorrect help of export\_path for the manage utility
 * Updated from global requirements
 * Fix args parsing for quota-class-update
 * Change Manilaclient to use --os-region-name param
@@ -231,22 +365,22 @@ CHANGES
 * Fix client API version to support Manila API
 * Implement Share Instances Admin API
 * Add Share Migration support to Manila Client
-* Update path to subunit2html in post_test_hook
+* Update path to subunit2html in post\_test\_hook
 * Manila REST API Microversion Support for Client
-* Add support of new extra spec 'snapshot_support'
+* Add support of new extra spec 'snapshot\_support'
 * Allow user to unset security service params
 * Updated from global requirements
 * Allow user to unset share network params
 * Move requirement Openstack client to test-requirements
 * Updated from global requirements
-* Make spec_driver_handles_share_servers required
+* Make spec\_driver\_handles\_share\_servers required
 * Modify the manage command prompt information
 * Updated from global requirements
 * Add availability zones support
 * Updated from global requirements
 * Add functional tests for access rules
 * Updated from global requirements
-* Fix post_test_hook and update test-requirements
+* Fix post\_test\_hook and update test-requirements
 * Updated from global requirements
 * Updated from global requirements
 * Updated from global requirements
@@ -263,7 +397,7 @@ CHANGES
 * Drop incubating theme from docs
 * Add share extend API
 * Fix configuration for tox 2.0.x
-* Rename functional test module from shares to shares_listing
+* Rename functional test module from shares to shares\_listing
 * Increase quota for share networks in manila installation
 * Updated from global requirements
 * Updated from global requirements
@@ -272,7 +406,7 @@ CHANGES
 * Add rw functional tests for share type extra specs
 * Add rw functional tests for private share types
 * Add rw functional tests for public share types
-* Implement wrapper for ascii table parser from tempest_lib.cli
+* Implement wrapper for ascii table parser from tempest\_lib.cli
 * Update README to work with release tools
 
 1.1.0
@@ -290,23 +424,23 @@ CHANGES
 1.0.3
 -----
 
-* Implement private share_types
+* Implement private share\_types
 * Print share export locations more pretty
 * Make public shares visible for all tenants
 * Add Manila client and CLI support for listing scheduler pools
-* Remove workaround from type_create() shell command
+* Remove workaround from type\_create() shell command
 * Add basic manage/unmanage share functionality
 * Updated from global requirements
 * Updated from global requirements
 * Manila access-allow CLI command doesn't accept backslash
-* Make extra spec driver_handles_share_servers required
-* Remove redundant call to API in ShareType.get_keys() method
+* Make extra spec driver\_handles\_share\_servers required
+* Remove redundant call to API in ShareType.get\_keys() method
 * Add support of snapshot gigabytes quotas
 * Add support of nova network to share networks
 * Add keystone-session support
 * Updated from global requirements
-* Add is_default column to type-list command output
-* Rename volume_type to share_type
+* Add is\_default column to type-list command output
+* Rename volume\_type to share\_type
 * Updated from global requirements
 * Add hint for HDFS protocol while creating shares
 * Add -d short option for --debug
@@ -314,10 +448,10 @@ CHANGES
 * Print expected and actual request body in fake client
 * Updated from global requirements
 * Updated from global requirements
-* Add support of arg "access_level" to allow_access operation
+* Add support of arg "access\_level" to allow\_access operation
 * Fix share-server-list functional test
 * Add info about functional tests run to docs
-* Use print_list and print_dict functions from common code
+* Use print\_list and print\_dict functions from common code
 * Add read-only functional tests
 * Sync oslo common cliutils code to fix the prints incompatibility in py3
 * Remove nonexistent directory "tests" from pep8 scanning
@@ -381,7 +515,7 @@ CHANGES
 * Use Resource class from common code
 * Use getid func from common code
 * Add new option to the 'list' shell command
-* Fix run_tests.sh
+* Fix run\_tests.sh
 * Reuse exceptions from common apiclient code
 * Sync common modules from Oslo
 * Update requirements and fix pep issues after it
@@ -394,11 +528,11 @@ CHANGES
 * Add .testrepository to .gitignore
 * Remove py33 incompatibilities
 * Remove locals() from code base and enable H501 pep/flake rule
-* Enable H23* rules in pep/flake (py3-compat)
-* Enable H30* rules in pep/flake
-* Enable H40* rules in pep/flake
+* Enable H23\* rules in pep/flake (py3-compat)
+* Enable H30\* rules in pep/flake
+* Enable H40\* rules in pep/flake
 * Replace usage of unittest.TestCase with tests.utils.TestCase
-* Code cleanup: use oslo's to_slug() instead of slugify()
+* Code cleanup: use oslo's to\_slug() instead of slugify()
 * Replace json with jsonutils from common code
 * Fix creation of share without share-network
 * Fix description for share deletion
@@ -411,14 +545,14 @@ CHANGES
 * Remove unused imports, reenable pyflakes
 * Switch to Hacking 0.8 / Pep8 1.4.x
 * Added share-server api support
-* Removed share_network activation API
+* Removed share\_network activation API
 * Skip sdist step in tox setup
 * Switch to using PBR
 * Fix various Pep8 1.4.x warnings
 * Sync with global requirements
-* Rename to manila.bash_completion
+* Rename to manila.bash\_completion
 * Rename pip/test-requires to standard naming
-* Added volume_types support to manilalcient
+* Added volume\_types support to manilalcient
 * Added service-list request
 * Added type key into security service list view
 * Added detail parameter to list methods
@@ -442,7 +576,7 @@ CHANGES
 * Added support of per-tenant-user quotas
 * Fixes using quota-show with default tenant id
 * Removes deprecated global opts from python-manilaclient/shell.py
-* Default tenant id for quota_defaults
+* Default tenant id for quota\_defaults
 * Rename functionality implementation for manila client
 * Add .gitreview file
 * fixed pep8
@@ -459,7 +593,7 @@ CHANGES
 * env folders removed
 * removed disabled volume functionality
 * cleaned client with fixed tests. no quotas functionality implemented
-* renamed service_type to share
+* renamed service\_type to share
 * deleted volume v1
 * mass replace cinder to manila
 * fixed service type
