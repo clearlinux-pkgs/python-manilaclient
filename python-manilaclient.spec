@@ -5,11 +5,11 @@
 # Source0 file verified with key 0xC36CDCB4DF00C68C (infra-root@openstack.org)
 #
 Name     : python-manilaclient
-Version  : 1.23.0
-Release  : 21
-URL      : http://tarballs.openstack.org/python-manilaclient/python-manilaclient-1.23.0.tar.gz
-Source0  : http://tarballs.openstack.org/python-manilaclient/python-manilaclient-1.23.0.tar.gz
-Source99 : http://tarballs.openstack.org/python-manilaclient/python-manilaclient-1.23.0.tar.gz.asc
+Version  : 1.24.0
+Release  : 22
+URL      : http://tarballs.openstack.org/python-manilaclient/python-manilaclient-1.24.0.tar.gz
+Source0  : http://tarballs.openstack.org/python-manilaclient/python-manilaclient-1.24.0.tar.gz
+Source99 : http://tarballs.openstack.org/python-manilaclient/python-manilaclient-1.24.0.tar.gz.asc
 Summary  : Client library for OpenStack Manila API.
 Group    : Development/Tools
 License  : Apache-2.0
@@ -20,6 +20,7 @@ Requires: python-manilaclient-python
 Requires: Babel
 Requires: Sphinx
 Requires: debtcollector
+Requires: docutils
 Requires: ipaddress
 Requires: openstackdocstheme
 Requires: oslo.config
@@ -78,14 +79,14 @@ python3 components for the python-manilaclient package.
 
 
 %prep
-%setup -q -n python-manilaclient-1.23.0
+%setup -q -n python-manilaclient-1.24.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1532382071
+export SOURCE_DATE_EPOCH=1532704844
 python3 setup.py build -b py3
 
 %install

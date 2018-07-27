@@ -1,16 +1,30 @@
 CHANGES
 =======
 
+1.24.0
+------
+
+* Fix is\_default value is empty issue when create
+* Support metadata for access rule resource
+* Fix using column reports nothing for capabilities
+* Add release note link in README
+* Add check to the flake8 job
+* Remove PyPI downloads
+* fix tox python3 overrides
+
 1.23.0
 ------
 
 * allow '--help' to print subcomands info
+* Delete unused files to increase test coverage
+* Increase coverage test
 * Switch to use stestr instead of testr
 * Support filter search for share type API
 * Fix failed to import test module
 * Mark functional tests passwords as secrets
 * Remove fake\_client module as it is unused
 * Trivial: Update pypi url to new url
+* Fix allow the use of blank in user group name to access the share
 
 1.22.0
 ------
