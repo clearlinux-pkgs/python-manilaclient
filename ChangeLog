@@ -1,11 +1,24 @@
 CHANGES
 =======
 
-1.24.1
+1.25.0
 ------
 
+* Change python3.5 job to python3.7 job on Stein+
+* Don't quote {posargs} in tox.ini
+* Stop encoding "~" in query parameters
+* Add unit-test for availability\_zones.AvailabilityZone repr()
+* fix tox python3 overrides
+* Use templates for cover and lower-constraints
+* Drop 'clidoc' from sphinx extensions
+* add python 3.6 unit test job
+* switch documentation job to new PTI
+* import zuul job settings from project-config
+* Fix functional tests
+* Fix sort options --sort-key and --sort-dir in list command
+* Fix type-show command with name
 * Loosen docutils requirement pin
-* Update .gitreview for stable/rocky
+* Update reno for stable/rocky
 
 1.24.0
 ------
@@ -13,6 +26,7 @@ CHANGES
 * Fix is\_default value is empty issue when create
 * Support metadata for access rule resource
 * Fix using column reports nothing for capabilities
+* Replace unicode with six.text\_type
 * Add release note link in README
 * Add check to the flake8 job
 * Remove PyPI downloads
