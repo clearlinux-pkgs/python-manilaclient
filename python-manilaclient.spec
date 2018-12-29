@@ -6,7 +6,7 @@
 #
 Name     : python-manilaclient
 Version  : 1.25.0
-Release  : 25
+Release  : 26
 URL      : http://tarballs.openstack.org/python-manilaclient/python-manilaclient-1.25.0.tar.gz
 Source0  : http://tarballs.openstack.org/python-manilaclient/python-manilaclient-1.25.0.tar.gz
 Source99 : http://tarballs.openstack.org/python-manilaclient/python-manilaclient-1.25.0.tar.gz.asc
