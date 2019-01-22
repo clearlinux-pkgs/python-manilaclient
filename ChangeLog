@@ -1,6 +1,19 @@
 CHANGES
 =======
 
+1.26.0
+------
+
+* Convert functional tests to python3
+* [Python3] Fix python3 bugs in code
+* Add missing organizational unit (--ou) parameter in manila cli
+* Run manilaclient-dsvm-neutron-functional on bionic
+* Return is\_default as a value instead of a function object
+* Change openstack-dev to openstack-discuss
+* Add Python 3.6 classifier to setup.cfg
+* Add Release Notes in README
+* Remove setup.py check from pep8 job
+
 1.25.0
 ------
 
