@@ -6,7 +6,7 @@
 #
 Name     : python-manilaclient
 Version  : 1.26.0
-Release  : 27
+Release  : 28
 URL      : http://tarballs.openstack.org/python-manilaclient/python-manilaclient-1.26.0.tar.gz
 Source0  : http://tarballs.openstack.org/python-manilaclient/python-manilaclient-1.26.0.tar.gz
 Source99 : http://tarballs.openstack.org/python-manilaclient/python-manilaclient-1.26.0.tar.gz.asc
@@ -18,22 +18,18 @@ Requires: python-manilaclient-license = %{version}-%{release}
 Requires: python-manilaclient-python = %{version}-%{release}
 Requires: python-manilaclient-python3 = %{version}-%{release}
 Requires: Babel
-Requires: Sphinx
 Requires: debtcollector
 Requires: docutils
 Requires: ipaddress
-Requires: openstackdocstheme
 Requires: oslo.config
 Requires: oslo.log
 Requires: oslo.serialization
 Requires: oslo.utils
 Requires: pbr
 Requires: python-keystoneclient
-Requires: reno
 Requires: requests
 Requires: simplejson
 Requires: six
-Requires: sphinxcontrib-programoutput
 BuildRequires : buildreq-distutils3
 BuildRequires : pbr
 
@@ -87,7 +83,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1548116310
+export SOURCE_DATE_EPOCH=1551035717
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
