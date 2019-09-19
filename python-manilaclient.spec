@@ -5,11 +5,11 @@
 # Source0 file verified with key 0xFC43F0EE211DFED8 (infra-root@openstack.org)
 #
 Name     : python-manilaclient
-Version  : 1.28.0
-Release  : 32
-URL      : http://tarballs.openstack.org/python-manilaclient/python-manilaclient-1.28.0.tar.gz
-Source0  : http://tarballs.openstack.org/python-manilaclient/python-manilaclient-1.28.0.tar.gz
-Source1 : http://tarballs.openstack.org/python-manilaclient/python-manilaclient-1.28.0.tar.gz.asc
+Version  : 1.29.0
+Release  : 33
+URL      : http://tarballs.openstack.org/python-manilaclient/python-manilaclient-1.29.0.tar.gz
+Source0  : http://tarballs.openstack.org/python-manilaclient/python-manilaclient-1.29.0.tar.gz
+Source1 : http://tarballs.openstack.org/python-manilaclient/python-manilaclient-1.29.0.tar.gz.asc
 Summary  : Client library for OpenStack Manila API
 Group    : Development/Tools
 License  : Apache-2.0
@@ -86,14 +86,14 @@ python3 components for the python-manilaclient package.
 
 
 %prep
-%setup -q -n python-manilaclient-1.28.0
+%setup -q -n python-manilaclient-1.29.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1566311268
+export SOURCE_DATE_EPOCH=1568907687
 # -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
