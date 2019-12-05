@@ -6,7 +6,7 @@
 #
 Name     : python-manilaclient
 Version  : 1.29.0
-Release  : 33
+Release  : 34
 URL      : http://tarballs.openstack.org/python-manilaclient/python-manilaclient-1.29.0.tar.gz
 Source0  : http://tarballs.openstack.org/python-manilaclient/python-manilaclient-1.29.0.tar.gz
 Source1 : http://tarballs.openstack.org/python-manilaclient/python-manilaclient-1.29.0.tar.gz.asc
