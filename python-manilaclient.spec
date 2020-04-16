@@ -5,12 +5,12 @@
 # Source0 file verified with key 0x4F398DEAE440091C (infra-root@openstack.org)
 #
 Name     : python-manilaclient
-Version  : 2.0.0
-Release  : 38
-URL      : http://tarballs.openstack.org/python-manilaclient/python-manilaclient-2.0.0.tar.gz
-Source0  : http://tarballs.openstack.org/python-manilaclient/python-manilaclient-2.0.0.tar.gz
-Source1  : http://tarballs.openstack.org/python-manilaclient/python-manilaclient-2.0.0.tar.gz.asc
-Summary  : Client library for OpenStack Manila API.
+Version  : 2.1.0
+Release  : 39
+URL      : http://tarballs.openstack.org/python-manilaclient/python-manilaclient-2.1.0.tar.gz
+Source0  : http://tarballs.openstack.org/python-manilaclient/python-manilaclient-2.1.0.tar.gz
+Source1  : http://tarballs.openstack.org/python-manilaclient/python-manilaclient-2.1.0.tar.gz.asc
+Summary  : Client library for OpenStack Manila API
 Group    : Development/Tools
 License  : Apache-2.0
 Requires: python-manilaclient-bin = %{version}-%{release}
@@ -19,7 +19,6 @@ Requires: python-manilaclient-python = %{version}-%{release}
 Requires: python-manilaclient-python3 = %{version}-%{release}
 Requires: Babel
 Requires: debtcollector
-Requires: ipaddress
 Requires: osc-lib
 Requires: oslo.config
 Requires: oslo.log
@@ -33,7 +32,6 @@ Requires: six
 BuildRequires : Babel
 BuildRequires : buildreq-distutils3
 BuildRequires : debtcollector
-BuildRequires : ipaddress
 BuildRequires : osc-lib
 BuildRequires : oslo.config
 BuildRequires : oslo.log
@@ -46,8 +44,11 @@ BuildRequires : simplejson
 BuildRequires : six
 
 %description
+========================
 Team and repository tags
-        ========================
+========================
+.. image:: https://governance.openstack.org/tc/badges/python-manilaclient.svg
+:target: https://governance.openstack.org/tc/reference/tags/index.html
 
 %package bin
 Summary: bin components for the python-manilaclient package.
@@ -80,34 +81,35 @@ Summary: python3 components for the python-manilaclient package.
 Group: Default
 Requires: python3-core
 Provides: pypi(python_manilaclient)
-Requires: pypi(babel)
-Requires: pypi(debtcollector)
-Requires: pypi(osc_lib)
-Requires: pypi(oslo.config)
-Requires: pypi(oslo.log)
-Requires: pypi(oslo.serialization)
-Requires: pypi(oslo.utils)
 Requires: pypi(pbr)
-Requires: pypi(prettytable)
-Requires: pypi(python_keystoneclient)
+Requires: pypi(debtcollector)
 Requires: pypi(requests)
 Requires: pypi(simplejson)
 Requires: pypi(six)
+Requires: pypi(oslo.log)
+Requires: pypi(oslo.config)
+Requires: pypi(oslo.serialization)
+Requires: pypi(osc_lib)
+Requires: pypi(babel)
+Requires: pypi(prettytable)
+Requires: pypi(python_keystoneclient)
+Requires: pypi(oslo.utils)
 
 %description python3
 python3 components for the python-manilaclient package.
 
 
 %prep
-%setup -q -n python-manilaclient-2.0.0
-cd %{_builddir}/python-manilaclient-2.0.0
+%setup -q -n python-manilaclient-2.1.0
+cd %{_builddir}/python-manilaclient-2.1.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1583541395
+export SOURCE_DATE_EPOCH=1587059924
+# -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$CFLAGS -fno-lto "
@@ -120,7 +122,7 @@ python3 setup.py build
 export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/python-manilaclient
-cp %{_builddir}/python-manilaclient-2.0.0/LICENSE %{buildroot}/usr/share/package-licenses/python-manilaclient/687572debd4998ceba20fbc7eaa2f7ee941dded2
+cp %{_builddir}/python-manilaclient-2.1.0/LICENSE %{buildroot}/usr/share/package-licenses/python-manilaclient/687572debd4998ceba20fbc7eaa2f7ee941dded2
 python3 -tt setup.py build  install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
